@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <View
+        android:id="@+id/view0"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#A6A6A6"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/view0"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/shape_oval_gray"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="20dp"
+        android:background="#A6A6A6"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignBottom="@+id/view2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="15dp"
+        android:background="#A6A6A6"/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_margin="14dp"
+        android:layout_toRightOf="@+id/view0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:text="提交成功"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:text="2015-9-28"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
